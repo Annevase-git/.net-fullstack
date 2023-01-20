@@ -1,0 +1,18 @@
+﻿
+@model IEnumerable<ASP.NET1.Models.Product>
+
+<h2>Index</h2>
+
+<h2>Product list as on: @DateTime.Now.ToString()</h2>
+<div>
+   @{
+    foreach (var p in Model)
+    {
+    <h2>Product Id: @p.ProductId</h2>
+    <h3>Product Name: @p.ProductName</h3>
+    <h3>Price: @p.Price</h3>
+    <hr />
+    }
+    }
+
+</div>
